@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/vf_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlack"
+        android:flipInterval="2000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/action_edit"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/action_settings"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/login_EmailAddress"
+            android:textSize="20sp"/>
+
+
+    </ViewFlipper>
+
+</LinearLayout>

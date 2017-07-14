@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/li_background"
+    android:orientation="horizontal" >
+
+    <LinearLayout style="@style/ll_login_view" android:layout_gravity="center_vertical">
+
+        <ImageView  style="@style/iv_login_view" />
+
+        <LinearLayout style="@style/ll_login_view1"
+            android:layout_marginTop="8dip" android:background="@drawable/li_et_first_shape">
+
+            <TextView style="@style/tv_login_view"
+                android:textColor="@color/colorBlack" android:text="@string/login_OrgId"/>
+
+            <EditText style="@style/et_login_view" android:id="@+id/et_login_OrgId"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_login_line_view"/>
+        <LinearLayout style="@style/ll_login_view1" android:background="@color/colorWhite">
+
+            <TextView style="@style/tv_login_view"
+                android:textColor="@color/colorBlack" android:text="@string/login_UserName"/>
+
+            <EditText style="@style/et_login_view" android:id="@+id/et_login_UserName"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_login_line_view"/>
+        <LinearLayout style="@style/ll_login_view1" android:background="@color/colorWhite">
+
+            <TextView style="@style/tv_login_view"
+                android:textColor="@color/colorBlack"  android:text="@string/login_Password"/>
+
+            <EditText style="@style/et_login_view" android:password="true" android:id="@+id/et_login_Password" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_login_line_view"/>
+        <LinearLayout style="@style/ll_login_view1" android:background="@drawable/li_et_last_shape">
+
+            <TextView style="@style/tv_login_view" android:textColor="@color/colorBlack" android:text="@string/login_EmailAddress"/>
+
+            <EditText style="@style/et_login_view" android:id="@+id/et_login_EmailAddress" />
+        </LinearLayout>
+
+        <Button style="@style/btn_login_view" android:id="@+id/btn_login_LogIn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
